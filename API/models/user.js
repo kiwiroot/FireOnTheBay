@@ -12,6 +12,7 @@ var User = {
       username: {type: String, required: true, unique: true},
       firstName: String,
       lastName: String,
+      email: String,
       image: {type: String, default: 'http://placehold.it/64x64'}
     }));
 
