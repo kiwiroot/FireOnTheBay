@@ -1,8 +1,7 @@
 var express = require('express'),
     app = express(),
     mongoose = require('mongoose'),
-    db = mongoose.connection
-
+    db = mongoose.connection,
     //Load in the models
     User = require('./models/user').init(mongoose);
 
@@ -16,7 +15,7 @@ db.once('open', function() {
 });
 
 //Connect to the database
-mongoose.connect('mongodb://root:n0d3db@mongo.onmodulus.net:27017/uxar4iDa');
+mongoose.connect('mongodb://root:FireOnTheBay@mongo.onmodulus.net:27017/apu6qaXa');
 
 app.get('/users', function(req, res) {
   User.getAll(function(err, dudes) {
